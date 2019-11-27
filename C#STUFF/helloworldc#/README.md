@@ -1,0 +1,2 @@
+# NetCoreConsoleLibrary
+Library
