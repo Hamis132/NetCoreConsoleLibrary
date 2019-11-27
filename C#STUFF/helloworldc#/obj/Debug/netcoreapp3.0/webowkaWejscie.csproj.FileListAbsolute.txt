@@ -20,3 +20,14 @@ D:/webowkaWejscie/obj/Debug/netcoreapp3.0/webowkaWejscie.pdb
 /home/kosma/Desktop/VisualStudio/C#STUFF/helloworldc#/obj/Debug/netcoreapp3.0/webowkaWejscie.AssemblyInfo.cs
 /home/kosma/Desktop/VisualStudio/C#STUFF/helloworldc#/obj/Debug/netcoreapp3.0/webowkaWejscie.dll
 /home/kosma/Desktop/VisualStudio/C#STUFF/helloworldc#/obj/Debug/netcoreapp3.0/webowkaWejscie.pdb
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\bin\Debug\netcoreapp3.0\webowkaWejscie.exe
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\bin\Debug\netcoreapp3.0\webowkaWejscie.deps.json
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\bin\Debug\netcoreapp3.0\webowkaWejscie.runtimeconfig.json
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\bin\Debug\netcoreapp3.0\webowkaWejscie.runtimeconfig.dev.json
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\bin\Debug\netcoreapp3.0\webowkaWejscie.dll
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\bin\Debug\netcoreapp3.0\webowkaWejscie.pdb
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\obj\Debug\netcoreapp3.0\webowkaWejscie.csprojAssemblyReference.cache
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\obj\Debug\netcoreapp3.0\webowkaWejscie.AssemblyInfoInputs.cache
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\obj\Debug\netcoreapp3.0\webowkaWejscie.AssemblyInfo.cs
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\obj\Debug\netcoreapp3.0\webowkaWejscie.dll
+D:\dotnetRepo\NetCoreConsoleLibrary\C#STUFF\helloworldc#\obj\Debug\netcoreapp3.0\webowkaWejscie.pdb

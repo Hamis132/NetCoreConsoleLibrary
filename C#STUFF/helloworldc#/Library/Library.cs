@@ -1,38 +1,39 @@
 namespace webowkaWejscie.Library
 {
     using System;
+    using System.Collections.Generic;
     using webowkaWejscie.Interfaces;
     using webowkaWejscie.Models;
-
+    using webowkaWejscie.SortingAlgorithms;
+    using System.Linq;
     public class Library : ILibrary
     {
-        public Book AddBook(int a, Book previous)
+        public List<Book> Books { get; private set; } 
+
+        public Library()
         {
-            Book tmp;
+            Books = new List<Book>();
+        }
+
+        public void SortBooks()
+        {
+            BubbleSort.Sort(Books);
+        }
+
+        public void AddBook()
+        {
             string s, b;
             
             Console.Write("Add the author name "); s = Console.ReadLine(); 
             Console.Write("\nAdd the title "); b = Console.ReadLine();
 
             Console.Clear();
-
-            if(a == 0)
-            {
-                tmp = new Book(s,b);
-                tmp.setnext(null);
-                return tmp;
-            }
-            else
-            {
-                tmp = new Book(s,b);
-                tmp.setnext(null);
-                previous.setnext(tmp);
-                return tmp;
-            }
-
-            throw new NotImplementedException("error");
+            
+            Books.Add(new Book(s,b));
         }
-        public void FindBook(Book head)
+
+
+        public void FindBook()
         {
             string  a, b;
             string x;
@@ -46,37 +47,34 @@ namespace webowkaWejscie.Library
             x = Console.ReadLine();
 
             Console.Clear();
-
+            Book book;
             if(x == "1" || x == "2")
             {
-                Console.WriteLine("input parameter "); a = Console.ReadLine();
+                Console.WriteLine("input parameter ");
+                a = Console.ReadLine();
                 Console.Clear();
 
                 if(x == "1")
                 {
-                    while(head != null)
+                    Func<Book, bool> func = (item) => {
+                                        return item.Author.ToLower() == a.ToLower();
+                                        };
+                    book = Books.FirstOrDefault(func);
+                    
+                    if(book != null)
                     {
-                        if(head.Author == a)
-                        {
-                            Console.Write(head.Author, " ");
-                            Console.WriteLine(head.Title);
-                            f = true;
-                        }
-
-                        head = head.next;
+                        System.Console.WriteLine($"Author: {book.Author} Title: {book.Title}");
                     }
+
                 }
                 else
                 {
-                     while(head != null)
+                    book = Books.FirstOrDefault(x => x.Title
+                                                    .Equals(a, StringComparison.CurrentCultureIgnoreCase)
+                                                );
+                    if(book != null)
                     {
-                        if(head.Title == a)
-                        {
-                            Console.Write(head.Author, " ");
-                            Console.WriteLine(head.Title);
-                            f = true;
-                        }
-                        head = head.next;
+                        System.Console.WriteLine($"Author: {book.Author} Title: {book.Title}");
                     }
                 }
 
@@ -87,16 +85,7 @@ namespace webowkaWejscie.Library
                 Console.WriteLine("input title "); b = Console.ReadLine();
                 Console.Clear();
 
-                while(head != null)
-                {
-                    if(head.Title == b && head.Author == a)
-                    {
-                        Console.Write(head.Author, " ");
-                        Console.WriteLine(head.Title);
-                        f = true;
-                    }
-                    head = head.next;
-                }
+                book = Books.FirstOrDefault(x => x.Author.Equals(a) && x.Title.Equals(b));
             }
 
             if(f == false) Console.WriteLine("There is no such book");
@@ -104,15 +93,12 @@ namespace webowkaWejscie.Library
 
             Console.Clear();
         }
-        public void showlistofbooks(Book head)
+        public void showlistofbooks()
         {
-            while(head != null)
+            foreach(Book book in Books)
             {
-                Console.Write(head.Title);
-                Console.Write("   ");
-                Console.WriteLine(head.Author);
-
-                head = head.next;
+                System.Console.WriteLine(
+                    $"Author: {book.Author}\nTitle: {book.Title}");
             }
         }
     }

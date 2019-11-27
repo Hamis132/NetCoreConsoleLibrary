@@ -10,12 +10,11 @@ namespace webowkaWejscie
         static void Main(string[] args)
         {
             int books = 0;
-            string x;
+            char x;
             ILibrary biblioteka = new Library.Library();
-            
+
             Book head = null;
             Book previous = null;
-
 
             while(true)
             {
@@ -26,28 +25,23 @@ namespace webowkaWejscie
                     Console.Write ("3. show list of books \n");
                     Console.Write("0. exit\n\n");
 
-                x = Console.ReadLine();      
+                x = Console.ReadKey().KeyChar;      
         
                 Console.Clear();
 
-                if(x == "1")
+                if(x == '1')
                 { 
-                    previous = biblioteka.AddBook(books, previous); 
-                    if(books == 0) head = previous; 
-                    books++; 
+                    biblioteka.AddBook(); 
                 }
-                else if(x == "2")        
-                {    
-                   if(head == null) Console.Write("There is no books here sorry\n"); 
-                   else biblioteka.FindBook(head);              
+                else if(x == '2')        
+                {     
+                    biblioteka.FindBook();              
                 }  
-                else if(x == "3") 
+                else if(x == '3') 
                 {
-                    biblioteka.showlistofbooks(head);
+                    biblioteka.showlistofbooks();
                 }
-                else if(x == "0") break;
-               
-
+                else if(x == '0') break;
             }        
         }
     }

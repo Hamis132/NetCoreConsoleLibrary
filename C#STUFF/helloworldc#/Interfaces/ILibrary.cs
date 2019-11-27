@@ -4,8 +4,9 @@ namespace webowkaWejscie.Interfaces
 
     public interface ILibrary
     {
-        Book AddBook(int a, Book previous);
-        void FindBook(Book head);
-        void showlistofbooks(Book head);
+        void AddBook();
+        void SortBooks();
+        void FindBook();
+        void showlistofbooks();
     }
 }

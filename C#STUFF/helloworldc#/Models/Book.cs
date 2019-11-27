@@ -4,9 +4,9 @@ namespace webowkaWejscie.Models
     public class Book
     {
  
-        public string Title;
-        public string Author;
-        public Book next;
+        public string Title {get;set;}
+        public string Author { get;set;}
+        public Book next {get;set;}
         public Book(string author, string title)
         {
             Title = title;
