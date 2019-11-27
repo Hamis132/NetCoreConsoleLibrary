@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\webowkaWejscie\\webowkaWejscie.csproj": {}
+    "D:\\dotnetRepo\\NetCoreConsoleLibrary\\C#STUFF\\helloworldc#\\webowkaWejscie.csproj": {}
   },
   "projects": {
-    "D:\\webowkaWejscie\\webowkaWejscie.csproj": {
+    "D:\\dotnetRepo\\NetCoreConsoleLibrary\\C#STUFF\\helloworldc#\\webowkaWejscie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\webowkaWejscie\\webowkaWejscie.csproj",
+        "projectUniqueName": "D:\\dotnetRepo\\NetCoreConsoleLibrary\\C#STUFF\\helloworldc#\\webowkaWejscie.csproj",
         "projectName": "webowkaWejscie",
-        "projectPath": "D:\\webowkaWejscie\\webowkaWejscie.csproj",
+        "projectPath": "D:\\dotnetRepo\\NetCoreConsoleLibrary\\C#STUFF\\helloworldc#\\webowkaWejscie.csproj",
         "packagesPath": "C:\\Users\\phali\\.nuget\\packages\\",
-        "outputPath": "D:\\webowkaWejscie\\obj\\",
+        "outputPath": "D:\\dotnetRepo\\NetCoreConsoleLibrary\\C#STUFF\\helloworldc#\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

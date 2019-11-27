@@ -3,31 +3,18 @@ namespace webowkaWejscie.Models
 {
     public class Book
     {
-        private int id;
-        public int Id
+ 
+        public string Title {get;set;}
+        public string Author { get;set;}
+        public Book next {get;set;}
+        public Book(string author, string title)
         {
-            get
-            {
-                if(id == 0)
-                {
-                    return int.MaxValue;
-                }
-                else
-                {
-                    return Id;
-                }
-            }
-            set
-            {
-                id = value;
-            }
-        }
-        public string Title { get; private set; }   
-
-        public Book(int id, string title)
-        {
-            Id = id;
-            title = Title;
+            Title = title;
+            Author = author;
         }   
+        public void setnext(Book tmp)
+        {
+            next = tmp;
+        }
     }
 }
